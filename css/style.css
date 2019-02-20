@@ -1,5 +1,6 @@
 body, html {
-    color: #FFF!important;
+    color: #AEAEAE!important;
+    line-height: 150%;
 }
 /* HEADER */
 header {
@@ -7,6 +8,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #FFF;
 }
 
 header nav {
@@ -51,7 +53,25 @@ header .home-img img {
 }
 /* /HEADER */
 /* MAIN */
+main section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
+.section-features img {
+    height: fit-content;
+}
+@media (min-width: 576px) { 
+    .section-features img {
+        padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 576px) { 
+    .section-features .d-flex {
+        display: block !important;
+    }
+}
 /* /MAIN */
 
 /* MDB classes overiding */
@@ -71,8 +91,14 @@ header .home-img img {
 .text-orange {
     color: #ED7354;
 }
-.text-orange:hover {
+.orange-text:hover {
     color: #ED7354 !important;
+}
+.blue-text {
+    color: #6795F7 !important;
+}
+.black-text {
+    color: #353A52 !important;
 }
 
 .btn-rounded {
