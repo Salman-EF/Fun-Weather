@@ -8,8 +8,6 @@ header nav {
 }
 
 header nav .navbar-nav-center {
-    margin-right: 9rem;
-    margin-left: 9rem;
     font-size: small;
 }
 header nav .navbar-nav-center a {
@@ -22,5 +20,13 @@ header nav .navbar-nav-center .active a,header nav .navbar-nav-center a:hover {
 
 header .nav-item a {
     width: fit-content!important;
-    margin: auto;
 }
+@media (min-width: 992px) { 
+    header nav .navbar-nav-center {
+        margin-right: 9rem;
+        margin-left: 9rem;
+    }
+    header .nav-item a {
+        margin: auto;
+    }
+ }
