@@ -28,8 +28,17 @@ header .nav-item a {
     width: fit-content!important;
 }
 
+header .home-content {
+    margin-top: 5rem;
+}
+header .home-content .col-md-6 {
+    margin-bottom: 4rem !important;
+}
 header .home-title {
     font-size: 3rem;
+}
+header .home-img img {
+    width: 100%;
 }
 @media (min-width: 992px) { 
     header nav .navbar-nav-center {
@@ -38,9 +47,6 @@ header .home-title {
     }
     header .nav-item a {
         margin: auto;
-    }
-    header .home-content {
-        margin-top: 5rem;
     }
 }
 /* /HEADER */
