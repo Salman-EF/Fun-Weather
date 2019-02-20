@@ -1,6 +1,12 @@
+body, html {
+    color: #FFF!important;
+}
+/* HEADER */
 header {
     background-image: url(../img/bg.png);
-    color: #FFF!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header nav {
@@ -21,6 +27,10 @@ header nav .navbar-nav-center .active a,header nav .navbar-nav-center a:hover {
 header .nav-item a {
     width: fit-content!important;
 }
+
+header .home-title {
+    font-size: 3rem;
+}
 @media (min-width: 992px) { 
     header nav .navbar-nav-center {
         margin-right: 9rem;
@@ -29,4 +39,37 @@ header .nav-item a {
     header .nav-item a {
         margin: auto;
     }
- }
+    header .home-content {
+        margin-top: 5rem;
+    }
+}
+/* /HEADER */
+/* MAIN */
+
+/* /MAIN */
+
+/* MDB classes overiding */
+.btn:hover {
+    color: inherit !important;
+}
+.btn-download {
+    background-color: #ED7354;
+    text-transform: none !important;
+    font-weight: bold;
+}
+.btn-features {
+    background-color: #466EC3;
+    text-transform: none !important;
+    font-weight: bold;
+}
+.text-orange {
+    color: #ED7354;
+}
+.text-orange:hover {
+    color: #ED7354 !important;
+}
+
+.btn-rounded {
+    border-radius: 50% !important;
+    padding: 0.8rem 1.1rem;
+}
