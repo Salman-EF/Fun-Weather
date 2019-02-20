@@ -72,6 +72,18 @@ main section {
         display: block !important;
     }
 }
+
+.section-screenshots {
+    font-weight: bold !important;
+}
+.section-screenshots .screenshot img {
+    width: fit-content;
+}
+@media (max-width: 576px) { 
+    .section-screenshots .screenshot img {
+        width: 100%;
+    }
+}
 /* /MAIN */
 
 /* MDB classes overiding */
