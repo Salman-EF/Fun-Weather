@@ -141,8 +141,12 @@ main section {
 footer {
     background-color: #353A52;
 }
+footer .container {
+    overflow: auto;
+}
 footer section {
-    padding: 4rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 footer ul a {
     color: #B5B6C7!important;
@@ -151,10 +155,27 @@ footer ul a {
 footer .active a,footer a:hover {
     color: #FFF !important;
 }
-footer .social-icons a {
+footer .social-icons {
+    float: right;
+}
+footer .social-icons li {
     align-items: center;
     margin-right: 1rem !important;
+}
+footer .social-icons li a {
     font-size: medium !important;
+}
+footer .social-icons li:last-child {
+    margin-right: 0 !important;
+}
+footer hr {
+    background: #3C425D;
+    border: none;
+    height: 1px;
+}
+footer .copyright {
+    float: right;
+    font-size: x-small;
 }
 @media (max-width: 576px) { 
     footer .footer-nav-row {
@@ -163,6 +184,14 @@ footer .social-icons a {
     }
     footer .footer-nav-col {
         max-width: none;
+    }
+    footer .social-icons {
+        float: none;
+        margin: 0;
+    }
+    footer .copyright {
+        float: none;
+        text-align: center;
     }
 }
 /* /FOOTER */
