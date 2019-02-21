@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <header>
-    <div class="container pb-5">
+  <header id="home">
+    <div class="container pb-5 scrollspy">
       <nav class="navbar navbar-expand-lg navbar-dark px-0">
           <a class="navbar-brand text-uppercase font-weight-bold" href="#">Fun weather.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -26,18 +26,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav navbar-nav-center flex-fill text-black-50">
+          <ul class="navbar-nav navbar-nav-center flex-fill text-black-50 smooth-scoll">
             <li class="nav-item active flex-fill">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item flex-fill">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item flex-fill">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="#reviews">Reviews</a>
             </li>
             <li class="nav-item flex-fill">
-              <a class="nav-link" href="#">Download</a>
+              <a class="nav-link" href="#download">Download</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons">
@@ -69,13 +69,13 @@
         </div>
       </div>
       <div class="text-center">
-          <button type="button" class="btn btn-white btn-rounded text-orange"><i class="fas fa-angle-down"></i></button>
+          <a href="#features" class="btn btn-white btn-rounded text-orange"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
   </header>
   <main>
     <div class="container">
-      <section class="section-features">
+      <section id="features" class="section-features scrollspy">
         <div class="text-center mb-5">
           <p class="h2 text-uppercase blue-text font-weight-bold">Perfect features</p>
           <p class="font-weight-bold">Only necessary</p>
@@ -104,7 +104,7 @@
           </div>
         </div>
       </section>
-      <section class="section-widgets">
+      <section  class="section-widgets">
           <div class="text-center mb-5">
             <p class="h2 text-uppercase blue-text font-weight-bold">Simple widgets</p>
             <p class="font-weight-bold">Drag and Drop</p>
@@ -170,7 +170,7 @@
             </div>
           </section>
       </section>
-      <section class="section-reviews">
+      <section id="reviews" class="section-reviews scrollspy">
           <div class="text-center mb-5">
             <p class="h2 text-uppercase blue-text">What people are saying</p>
             <p>Reviews</p>
@@ -219,7 +219,7 @@
           </div>
       </section>
     </div>
-    <section class="section-download">
+    <section id="download" class="section-download scrollspy">
       <div class="container">
         <div class="section-download-content">
           <p class="h2 pb-3 text-uppercase">How to download the app?</p>
@@ -248,17 +248,17 @@
           </div>
           <div class="col-6 footer-nav-col">
               <ul class="list-unstyled list-inline d-flex flex-fill">
-                <li class="list-inline-item active flex-fill">
-                    <a href="#">Home</a>
+                <li class="list-inline-item active flex-fill smooth-scroll">
+                    <a href="#home">Home</a>
                 </li>
                 <li class="list-inline-item flex-fill">
-                    <a href="#">Features</a>
+                    <a href="#features">Features</a>
                 </li>
                 <li class="list-inline-item flex-fill">
-                    <a href="#">Reviews</a>
+                    <a href="#reviews">Reviews</a>
                 </li>
                 <li class="list-inline-item flex-fill">
-                    <a href="#">Download</a>
+                    <a href="#download">Download</a>
                 </li>
               </ul>
           </div>
@@ -281,7 +281,7 @@
       <div class="py-4 copyright">&copy; 2016 All rights reserved. Weather App Theme by Gravpix</div>
     </div>
     <div class="scroll-btn-div">
-        <button type="button" class="btn scroll-btn"><i class="fas fa-angle-up"></i></button>
+        <a href="#home" class="btn scroll-btn"><i class="fas fa-angle-up"></i></a>
     </div>
   </footer>
 
@@ -294,6 +294,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.js"></script>
+  <!-- Custom main js script -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
