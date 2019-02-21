@@ -81,7 +81,7 @@ main section {
     padding-top: 2rem;
 }
 .section-screenshots .screenshot img {
-    width: 100%;
+    width: fit-content;
 }
 @media (max-width: 576px) { 
     .section-screenshots .screenshot img {
@@ -174,8 +174,22 @@ footer hr {
     height: 1px;
 }
 footer .copyright {
-    float: right;
+    text-align: right;
     font-size: x-small;
+}
+footer .scroll-btn-div {
+    text-align: right;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+footer .scroll-btn {
+    padding: 0.3rem 0.8rem;
+    bottom: -10px;
+    background-color: #434967;
+    color: #B5B6C7!important;
+}
+footer .scroll-btn:hover,footer .scroll-btn:focus {
+    color: #FFF !important;
 }
 @media (max-width: 576px) { 
     footer .footer-nav-row {
@@ -190,7 +204,6 @@ footer .copyright {
         margin: 0;
     }
     footer .copyright {
-        float: none;
         text-align: center;
     }
 }
