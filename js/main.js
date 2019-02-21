@@ -1,5 +1,9 @@
 /* ScrollSpy service */
+scrollSpy()
 $(window).bind('scroll', function() {
+    scrollSpy()
+}); 
+function scrollSpy() {
     var currentTop = $(window).scrollTop();
     var halfWindow = $(window).height() / 2;
     var changePoint = currentTop + halfWindow;
@@ -9,18 +13,18 @@ $(window).bind('scroll', function() {
       var elemBottom 	= elemTop + $(this).height();
       if(changePoint >= elemTop && changePoint <= elemBottom){
         var id 		= $(this).attr('id');
+        console.log('Its: '+id)
         var navElem = $('a[href="#' + id+ '"]');
         navElem.parent().addClass('active').siblings().removeClass( 'active' );
       }
     })
-}); 
+}
 
 /* Smooth-scroll service */
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
 	try {
         var position = $($(this).attr("href")).offset().top;
-    
         $("body, html").animate({
             scrollTop: position
         }, 1000);
