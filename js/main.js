@@ -37,3 +37,10 @@ $("a[href^='#']").click(function(e) {
 $('.navbar-collapse .nav-link-close').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
+
+/* jQuery Waterwheel Image Carousel */
+$(document).ready(function() {
+    $('#widgets-carousel').waterwheelCarousel({
+
+    })
+})
