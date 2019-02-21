@@ -32,3 +32,8 @@ $("a[href^='#']").click(function(e) {
         return null;
     }
 });
+
+/* Navbar close onclick onn item */
+$('.navbar-collapse .nav-link-close').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
