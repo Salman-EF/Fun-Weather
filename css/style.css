@@ -81,7 +81,7 @@ main section {
     padding-top: 2rem;
 }
 .section-screenshots .screenshot img {
-    width: fit-content;
+    width: 100%;
 }
 @media (max-width: 576px) { 
     .section-screenshots .screenshot img {
@@ -106,6 +106,33 @@ main section {
         max-width: none !important;
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+}
+
+.section-download {
+    color: #FFF;
+    background-image: url('../img/pre-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.section-download .section-download-content {
+    width: 50%;
+}
+.badge-appstore {
+    background-image: url('../img/app-store.png')
+}
+.badge-playstore {
+    background-image: url('../img/google-play-badge.png')
+}
+.badge-appstore, .badge-playstore {
+    background-size: cover;
+}
+@media (max-width: 576px) { 
+    .section-download .section-download-content {
+        width: 100%;
     }
 }
 /* /MAIN */
