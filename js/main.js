@@ -13,7 +13,6 @@ function scrollSpy() {
       var elemBottom 	= elemTop + $(this).height();
       if(changePoint >= elemTop && changePoint <= elemBottom){
         var id 		= $(this).attr('id');
-        console.log('Its: '+id)
         var navElem = $('a[href="#' + id+ '"]');
         navElem.parent().addClass('active').siblings().removeClass( 'active' );
       }

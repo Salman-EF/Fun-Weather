@@ -65,12 +65,14 @@ main section {
 @media (min-width: 576px) { 
     .section-features img {
         padding: 0 1rem !important;
+        
     }
 }
 
 @media (max-width: 576px) { 
     .section-features .d-flex {
         display: block !important;
+        text-align: center;
     }
 }
 
@@ -83,9 +85,23 @@ main section {
 .section-screenshots .screenshot img {
     width: fit-content;
 }
+@media (max-width: 992px) {
+    .section-screenshots .screenshot img {
+        width: 100%;
+    }
+}
+.section-screenshots .screenshot-text {
+    margin-bottom: 3rem;
+}
 @media (max-width: 576px) { 
     .section-screenshots .screenshot img {
         width: 100%;
+    }
+    .section-screenshots .screenshot-text {
+        text-align: center;
+    }
+    .section-screenshots .screenshot-text p {
+        width: 100% !important;
     }
 }
 
